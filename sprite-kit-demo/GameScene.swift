@@ -13,7 +13,7 @@ class GameScene: SKScene {
     let myFirstNode = SKNode()
     let myFirstSpriteNode = SKSpriteNode(color: UIColor.red, size: CGSize(width: 200.0, height: 200.0))
     let myFirstTexturedSpriteNode = SKSpriteNode(imageNamed: "Spaceship")
-    let blueSpriteNode = SKSpriteNode(color: UIColor.blue, size: CGSize(width: 100.0, height: 100.0))
+    let blueBox = SKSpriteNode(color: UIColor.blue, size: CGSize(width: 100.0, height: 100.0))
     
     override func didMove(to view: SKView) {
         addChild(myFirstNode)
@@ -26,8 +26,30 @@ class GameScene: SKScene {
         myFirstTexturedSpriteNode.size = CGSize(width: 100.0, height: 100.0)
         myFirstSpriteNode.addChild(myFirstTexturedSpriteNode)
         
-        blueSpriteNode.position = CGPoint(x: myFirstSpriteNode.size.width/2, y: myFirstSpriteNode.size.width/2)
-        blueSpriteNode.zPosition = 2
-        myFirstSpriteNode.addChild(blueSpriteNode)
+        blueBox.position = CGPoint(x: myFirstSpriteNode.size.width/2, y: myFirstSpriteNode.size.width/2)
+        blueBox.zPosition = 2
+        myFirstSpriteNode.addChild(blueBox)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        myFirstTexturedSpriteNode.run(SKAction.move(to: CGPoint(x: myFirstSpriteNode.size.width, y: myFirstSpriteNode.size.height), duration: 2.0))
+//        Roates half and then stops
+//        blueBox.run(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 2.0))
+//        Never stops
+        if !blueBox.hasActions(){
+//            blueBox.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1.0)))
+//            blueBox.run(SKAction.group([SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1.0), SKAction.scale(by:0.7, duration: 1.0)]))
+            blueBox.run(SKAction.sequence([SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1.0), SKAction.scale(by:0.7, duration: 1.0)]))
+        } else {
+            blueBox.removeAllActions()
+        }
+
+        
+        myFirstTexturedSpriteNode.run(SKAction.move(to: CGPoint(x: myFirstSpriteNode.size.width, y: myFirstSpriteNode.size.height), duration: 2.0)){
+            self.myFirstTexturedSpriteNode.position = CGPoint.zero
+        }
+        
+    }
+    
+    
 }
