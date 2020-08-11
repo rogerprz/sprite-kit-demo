@@ -14,6 +14,8 @@
 		F75D9C2524CFF98F003F7602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75D9C2424CFF98F003F7602 /* Assets.xcassets */; };
 		F75D9C2824CFF98F003F7602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75D9C2624CFF98F003F7602 /* LaunchScreen.storyboard */; };
 		F7FB93AA24E2616000216DC2 /* GameScenePhysicsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FB93A924E2616000216DC2 /* GameScenePhysicsDemo.swift */; };
+		F7FB93AC24E26A1800216DC2 /* TileMapScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7FB93AB24E26A1800216DC2 /* TileMapScene.sks */; };
+		F7FB93AE24E26B3C00216DC2 /* MyFirstTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7FB93AD24E26B3C00216DC2 /* MyFirstTileSet.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F75D9C2724CFF98F003F7602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F75D9C2924CFF98F003F7602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FB93A924E2616000216DC2 /* GameScenePhysicsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScenePhysicsDemo.swift; sourceTree = "<group>"; };
+		F7FB93AB24E26A1800216DC2 /* TileMapScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileMapScene.sks; sourceTree = "<group>"; };
+		F7FB93AD24E26B3C00216DC2 /* MyFirstTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyFirstTileSet.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				F75D9C2424CFF98F003F7602 /* Assets.xcassets */,
 				F75D9C2624CFF98F003F7602 /* LaunchScreen.storyboard */,
 				F75D9C2924CFF98F003F7602 /* Info.plist */,
+				F7FB93AB24E26A1800216DC2 /* TileMapScene.sks */,
+				F7FB93AD24E26B3C00216DC2 /* MyFirstTileSet.sks */,
 			);
 			path = "sprite-kit-demo";
 			sourceTree = "<group>";
@@ -129,8 +135,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75D9C2324CFF98B003F7602 /* Main.storyboard in Resources */,
+				F7FB93AC24E26A1800216DC2 /* TileMapScene.sks in Resources */,
 				F75D9C2524CFF98F003F7602 /* Assets.xcassets in Resources */,
 				F75D9C2824CFF98F003F7602 /* LaunchScreen.storyboard in Resources */,
+				F7FB93AE24E26B3C00216DC2 /* MyFirstTileSet.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
