@@ -14,8 +14,29 @@ class GameScene: SKScene {
         
     }
     
-    let dogSpriteNode = SKSpriteNode(imageNamed: "Run0")
-    var dogFrames = [SKTexture]()
+    override func update(_ currentTime: TimeInterval) {
+        print("update 1")
+    }
+    
+    override func didEvaluateActions() {
+        print("did Evaluate Actions 2")
+    }
+    
+    override func didSimulatePhysics() {
+        print("did Simulate Physics: 3")
+    }
+    
+    override func didApplyConstraints() {
+        print("did Apply Constraints: 4")
+    }
+    
+    override func didFinishUpdate() {
+        print("did Finish Update: 5")
+        isPaused = true
+    }
+    
+//    let dogSpriteNode = SKSpriteNode(imageNamed: "Run0")
+//    var dogFrames = [SKTexture]()
    
 //    override func didMove(to view: SKView) {
 //        dogSpriteNode.position = CGPoint(x: frame.midX, y: frame.midY)
