@@ -13,6 +13,7 @@
 		F75D9C2324CFF98B003F7602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75D9C2124CFF98B003F7602 /* Main.storyboard */; };
 		F75D9C2524CFF98F003F7602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75D9C2424CFF98F003F7602 /* Assets.xcassets */; };
 		F75D9C2824CFF98F003F7602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75D9C2624CFF98F003F7602 /* LaunchScreen.storyboard */; };
+		F7FB93AA24E2616000216DC2 /* GameScenePhysicsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FB93A924E2616000216DC2 /* GameScenePhysicsDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F75D9C2424CFF98F003F7602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75D9C2724CFF98F003F7602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F75D9C2924CFF98F003F7602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FB93A924E2616000216DC2 /* GameScenePhysicsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScenePhysicsDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				F75D9C1724CFF98B003F7602 /* AppDelegate.swift */,
 				F75D9C1D24CFF98B003F7602 /* GameScene.swift */,
+				F7FB93A924E2616000216DC2 /* GameScenePhysicsDemo.swift */,
 				F75D9C1F24CFF98B003F7602 /* GameViewController.swift */,
 				F75D9C2124CFF98B003F7602 /* Main.storyboard */,
 				F75D9C2424CFF98F003F7602 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				F75D9C1E24CFF98B003F7602 /* GameScene.swift in Sources */,
 				F75D9C2024CFF98B003F7602 /* GameViewController.swift in Sources */,
+				F7FB93AA24E2616000216DC2 /* GameScenePhysicsDemo.swift in Sources */,
 				F75D9C1824CFF98B003F7602 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
